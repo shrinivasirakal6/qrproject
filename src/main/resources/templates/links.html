@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>My Links</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        .link-button {
+            display: block;
+            margin: 10px auto;
+            padding: 15px 25px;
+            width: 200px;
+            text-decoration: none;
+            color: white;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+        .youtube { background: red; }
+        .whatsapp { background: green; }
+        .instagram { background: purple; }
+        .telegram { background: dodgerblue; }
+    </style>
+</head>
+<body>
+<h2>Choose a Link</h2>
+<a th:href="${youtube}" class="link-button youtube">YouTube</a>
+<a th:href="${whatsapp}" class="link-button whatsapp">WhatsApp</a>
+<a th:href="${instagram}" class="link-button instagram">Instagram</a>
+<a th:href="${telegram}" class="link-button telegram">Telegram</a>
+</body>
+</html>
