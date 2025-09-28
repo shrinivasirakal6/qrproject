@@ -24,6 +24,7 @@ public class QrController {
         //this is an experimental lineq
         // this is for conflict
 
+
         QRCodeWriter qrCodeWriter = new QRCodeWriter();
         var bitMatrix = qrCodeWriter.encode(qrContent, BarcodeFormat.QR_CODE, 300, 300);
 
