@@ -22,7 +22,7 @@ public class QrController {
         String qrContent = "http://localhost:8080/my-links";
 
         //this is an experimental lineq
-        // this is only in feature branch
+        // this is only in featur
 
         QRCodeWriter qrCodeWriter = new QRCodeWriter();
         var bitMatrix = qrCodeWriter.encode(qrContent, BarcodeFormat.QR_CODE, 300, 300);
