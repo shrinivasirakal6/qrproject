@@ -21,7 +21,8 @@ public class QrController {
         // The URL your QR should point to
         String qrContent = "http://localhost:8080/my-links";
 
-        //this is an experimental line
+        //this is an experimental lineq
+        // this is only in feature branch
 
         QRCodeWriter qrCodeWriter = new QRCodeWriter();
         var bitMatrix = qrCodeWriter.encode(qrContent, BarcodeFormat.QR_CODE, 300, 300);
